@@ -5,87 +5,124 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/estilos.css">
     <title>Galianoconstructora</title>
 </head>
 <body>
-    <div class="grid-container">
+    <div class="container-fluid">
     <!--Logo de empresa + Menu de navegación -->
-        <header>
-            <nav >
-                <a href="../index.html">
-                    <img class="logo" src="../Images/logoempresa.jpg"Haz clic aquí para volver a la página de inicio>
-                </a>
-                <ul class="list">
-                    <li class="dp1"><a class="pp3" href="../index.html">Inicio</a></li>
-                    <li class="dp1"><a class="pp4" href="nosotros.html">Nosotros</a></li>
-                    <li class="dp1"><a class="pp5" href="proyectos.html">Proyectos</a></li>
-                    <li class="dp1"><a class="pp6" href="cotizaciones.html">Cotizaciones</a></li>
-                    <li class="dp1"><a class="pp7" href="contacto.html">Contacto</a></li>        
-                </ul>
-            </nav>        
+        <header class="row">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+                    <div class="container-fluid">
+                        <a class="navbar-brand" href="../index.html">
+                            <img src="../Images/logoempresa.jpg" alt="" width="150" height="100">
+                        </a>
+                    </div>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="nosotros.html">Nosotros</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="proyectos.html">Proyectos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="cotizaciones.html">Cotizaciones</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contacto.html">Contacto</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
         </header>
             <!--Contenido de la página --> 
-        <main> 
-            <section class="page-content">
-                <img class="fondo" src="../Images/nosotros2.jpg">
+        <main class="row"> 
+            <div class="bg-image p-5 text-center shadow-1-strong rounded mb-5 text-white"
+            style="background-image: url('../Images/nosotros2.jpg');"><h1 class="mb-3 h2">Completa el formulario</h1>
+            <form>
+                <div class="row">
+                  <div class="col">
+                    <input type="text" class="form-control" placeholder="First name">
+                  </div>
+                  <div class="col">
+                    <input type="text" class="form-control" placeholder="Last name">
+                  </div>
+                </div>
+              </form>
+            <form>
+                <div class="form-group">
+                  <label for="exampleFormControlInput1">Email </label>
+                  <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                </div>
+                <div class="form-group">
+                  <label for="exampleFormControlSelect1">Selecciona el tipo de proyecto</label>
+                  <select class="form-control" id="exampleFormControlSelect1">
+                    <option>Mobiliario</option>
+                    <option>Especialidad</option>
+                    <option>Restauración</option>
+                    <option>Rehabilitación</option>
+                    <option>Remodelación</option>
+                  </select>
+                </div>                
+                <div class="form-group">
+                  <label for="exampleFormControlTextarea1">Describe tu proyecto</label>
+                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                </div>
+              </form>
+              <form>
+                <div class="form-group">
+                  <label for="exampleFormControlFile1">Sube tu proyecto</label>
+                  <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                </div>
+              </form>
+              <button class="btn btn-primary" type="submit">Enviar Proyecto</button>
+            </div>
+        </main> 
+        <!-- Comienzo de Footer -->       
+        <div class="row my-5">
+            <footer class="bg-dark text-center text-white">
+            <div class="container p-4 pb-0">
+            <section class="">
+                <form action="">
+                <div class="row d-flex justify-content-center">
+                    <div class="col-auto">
+                    <p class="pt-2">
+                        <strong>Suscríbase a nuestras noticias</strong>
+                    </p>
+                    </div>
+                    <div class="col-md-5 col-12">
+                    <div class="form-outline form-white mb-4">
+                        <input type="email" id="form5Example2" class="form-control" />
+                        <label class="form-label" for="form5Example2">Email </label>
+                    </div>
+                    </div>
+                    <div class="col-auto">
+                    <button type="submit" class="btn btn-outline-light mb-4">
+                        Suscribirse
+                    </button>
+                    </div>
+                </div>
+                </form>
             </section>
-            <h1 class="formCotiza1">¡Completa el formulario y cotiza!</h1>
-            <form class="formCotiza2 ">
-                <div>
-                    <label class="nom" for="nombre">Nombre del cliente:</label>
-                    <input class="inp1" type="text" name="nombre" id="nombre">
-                </div>
-                <div>
-                    <label class="nom" for="telefono">Número de contacto:</label>
-                    <input class="inp1" type="number" name="telefono" id="telefono">
-                </div>
-                <div> 
-                    <label class="nom" for="email">Email:</label>
-                    <input class="inp1" type="email" name="email" id="email">
-                </div>
-                <div>
-                    <label class="nom" for="nombreproyecto">Nombre del proyecto:</label>
-                    <input class="inp1" type="text" name="nombreproyecto" id="nombreproyecto">
-                </div>
-                <div>
-                    <select class="inp5" name="tipo" >
-                        <option value="remodelación">Remodelación</option>
-                        <option value="rehabilitación">Rehabilitación</option>
-                        <option value="restauración">Restauración</option>
-                        <option value="especialidad">Especialidades</option>
-                        <option value="mobiliario">Mobiliario</option>
-                    </select>
-                </div>
-                <div>
-                    <label class="nom2" for="descripcion">Describe tu proyecto:</label>
-                    <textarea class="inp1" name= "descripcion" id="descripcion" cols="80" rows="5"></textarea>
-                </div>
-                <div>
-                    <h3 class="sube">Sube tu proyecto</h3>
-                    <input type="file" />
-                </div>
-                <div class="sube"><input class="inp7" type="submit" name="Enviar cotización"></div>
-            </form>
-        </main>        
-<!-- En pie de pagina lateral derecho incluye logo WhatsApp con enlace directo a chat (versión web y smartphone)-->
-        <footer>
-            <div>
-                <div style="position:fixed; right:10px; bottom:10px; text-align:center; padding:3px">
-                    <a href="https://api.whatsapp.com/send?phone=+56979426190">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/240px-WhatsApp.svg.png" width="50" height="50">Contactanos</a>
-                </div>
-                <div class="dp1">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
-                    <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
-                    </svg>                    
-                    <a class="volver" href="https://www.linkedin.com/in/borisgaliano">Page Developed by Boris Galiano</a>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
-                        <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
-                    </svg>
-                </div>
-            </div>         
+            </div>
+            <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+                Page Developed by:
+            <a class="text-white" href="https://www.linkedin.com/in/borisgaliano">Boris Galiano</a>
+            </div>
         </footer>
+        </div>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>

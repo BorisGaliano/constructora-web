@@ -5,70 +5,117 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/estilos.css">
     <title>Galianoconstructora</title>
 </head>
 <body>
-    <div class="grid-container">
-    <!--Logo de empresa + Menu de navegación -->
-        <header>
-            <nav>
-                <a href="../index.html"><img class="logo" src="../Images/logoempresa.jpg"alt="Haz clic aquí para volver a la página de inicio"></a>
-                <ul class="list">
-                    <li class="dp1"><a class="pp3" href="../index.html">Inicio</a></li>
-                    <li class="dp1"><a class="pp4" href="../pages/nosotros.html">Nosotros</a></li>
-                    <li class="dp1"><a class="pp5" href="../pages/proyectos.html">Proyectos</a></li>
-                    <li class="dp1"><a class="pp6" href="cotizaciones.html">Cotizaciones</a></li>
-                    <li class="dp1"><a class="pp7" href="contacto.html">Contacto</a></li>        
-                </ul>
-            </nav>        
+    <div class="container-fluid">
+        <!--Logo de empresa + Menu de navegación -->
+        <header class="row">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+                    <div class="container-fluid">
+                        <a class="navbar-brand" href="../index.html">
+                            <img src="../Images/logoempresa.jpg" alt="" width="150" height="100">
+                        </a>
+                    </div>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="nosotros.html">Nosotros</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="proyectos.html">Proyectos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="cotizaciones.html">Cotizaciones</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contacto.html">Contacto</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
         </header>
-            <!--Contenido de la página-->
-        <main class="contenedor">
-            <section class="page-content">
-                <img class="fondo" src="../Images/contactenos.png">
-            </section>
-            <h1 class="fContacto">Nuestra ubicación y contacto:</h1> 
-            <div class="fContacto1">  
+        <main>
+        <!--Contenido de la página-->
+            <div
+            class="bg-image p-5 text-center shadow-1-strong rounded mb-5 text-white"
+            style="background-image: url('../Images/contactenos.png');">
+            <h1 class="">Nuestra ubicación y contacto:</h1>
+            <div class="">
                 <h2>Sala de ventas</h2>
                 <h3>Ubicación:</h3>
                 <h4>Avenida Las Condes #1215 Comuna: Las Condes R.M Chile</h4>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2322.0027930988076!2d-70.53419074545323!3d-33.382241367038!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662ceaa92ac0009%3A0xfb92e1260fc4f369!2sAv.%20las%20Condes%2C%20Las%20Condes%2C%20Regi%C3%B3n%20Metropolitana!5e0!3m2!1ses-419!2scl!4v1636246150201!5m2!1ses-419!2scl" width="300" height="200" style="border: 2
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2322.0027930988076!2d-70.53419074545323!3d-33.382241367038!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662ceaa92ac0009%3A0xfb92e1260fc4f369!2sAv.%20las%20Condes%2C%20Las%20Condes%2C%20Regi%C3%B3n%20Metropolitana!5e0!3m2!1ses-419!2scl!4v1636246150201!5m2!1ses-419!2scl"
+                    width="300" height="200" style="border: 2
                 px;;" allowfullscreen="" loading="lazy"></iframe>
             </div>
-            <div class="fContacto2"> 
-                <h2 class="franBilbao">Oficina de proyectos </h2>
-                <h3 class="franBilbao">Ubicación:</h3>
-                <h4 class="franBilbao">Francisco Bilbao #234 Comuna: Providencia R.M Chile</h4>
-                <iframe class="linkC" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d785.6035084218634!2d-70.62979036898555!3d-33.44223209986139!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662c578a00a868d%3A0xad504ed66116fa2c!2sAv.%20Francisco%20Bilbao%20234%2C%20Providencia%2C%20Regi%C3%B3n%20Metropolitana!5e0!3m2!1ses-419!2scl!4v1636246549087!5m2!1ses-419!2scl" width="300" height="200" style="border: 2px;;" allowfullscreen="" loading="lazy"></iframe>
+            <div class="">
+                <h2 class="">Oficina de proyectos </h2>
+                <h3 class="">Ubicación:</h3>
+                <h4 class="">Francisco Bilbao #234 Comuna: Providencia R.M Chile</h4>
+                <iframe class=""
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d785.6035084218634!2d-70.62979036898555!3d-33.44223209986139!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662c578a00a868d%3A0xad504ed66116fa2c!2sAv.%20Francisco%20Bilbao%20234%2C%20Providencia%2C%20Regi%C3%B3n%20Metropolitana!5e0!3m2!1ses-419!2scl!4v1636246549087!5m2!1ses-419!2scl"
+                    width="300" height="200" style="border: 2px;;" allowfullscreen="" loading="lazy"></iframe>
             </div>
             <div>
-                <article class="fContacto3">
+                <article class="">
                     <h3>Contactanos:</h3>
-                        <li>Sala de ventas: +56979426190</li>
-                        <li>Sala de proyectos: 900 600 6200</li>
-                        <p> Horario de atención: Lunes a viernes de 8:00 AM  a 18:00 PM , Horario de atención continuo</p>
+                    <li>Sala de ventas: +56979426190</li>
+                    <li>Sala de proyectos: 900 600 6200</li>
+                    <p> Horario de atención: Lunes a viernes de 8:00 AM a 18:00 PM , Horario de atención continuo</p>
                 </article>
-            </div>        
+            </div>
+            </div>
         </main>
-<!-- En pie de pagina lateral derecho incluye logo WhatsApp con enlace directo a chat (versión web y smartphone)-->
-        <footer>
-            <div>
-                <div style="position:fixed; right:10px; bottom:10px; text-align:center; padding:3px">
-                    <a href="https://api.whatsapp.com/send?phone=+56979426190">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/240px-WhatsApp.svg.png" width="50" height="50">Contactanos</a>
+        <!-- Comienzo de Footer -->
+        <div class="row my-5">
+            <footer class="bg-dark text-center text-white">
+                <div class="container p-4 pb-0">
+                    <section class="">
+                        <form action="">
+                            <div class="row d-flex justify-content-center">
+                                <div class="col-auto">
+                                    <p class="pt-2">
+                                        <strong>Suscríbase a nuestras noticias</strong>
+                                    </p>
+                                </div>
+                                <div class="col-md-5 col-12">
+                                    <div class="form-outline form-white mb-4">
+                                        <input type="email" id="form5Example2" class="form-control" />
+                                        <label class="form-label" for="form5Example2">Email </label>
+                                    </div>
+                                </div>
+                                <div class="col-auto">
+                                    <button type="submit" class="btn btn-outline-light mb-4">
+                                        Suscribirse
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </section>
                 </div>
-                <div class="dp1">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
-                    <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
-                    </svg>                    
-                    <a class="volver" href="https://www.linkedin.com/in/borisgaliano">Page Developed by Boris Galiano</a>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
-                        <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
-                    </svg>
+                <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+                    Page Developed by:
+                    <a class="text-white" href="https://www.linkedin.com/in/borisgaliano">Boris Galiano</a>
                 </div>
-            </div>       
-        </footer>
+            </footer>
+        </div>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
 </body>
 </html>
