@@ -1,0 +1,25 @@
+/* Nosotros */
+.rectangulo{
+    position:relative;
+    padding:1vw;
+    box-shadow: 0 5px 15px rgba(0,0,0,1 );
+    background-color: rgba(0,0,0,0.4);
+    align-items: center;}
+/* mapa*/
+$textSize:(
+    A1: 1.8vw,
+    B1: 1.7vw,
+    G1: 1.5vw,);
+@each $txt,$size in $textSize {
+    .txt#{$txt}{font-size: $size;}}
+.txt1{text-align:center;}
+.txt2{text-align: initial;}
+/* Extend */
+.rectangulo2{
+    @extend .rectangulo;        
+    left: 15px;
+    .parrafo1 {font-size: 1.5vw;}
+    .parrafo2{font-size: 1.5vw;}      
+}
+@media screen and (min-width: $punto-nosotrosmin) and (max-width: $punto-nosotrosmax) {
+.map1{display: none;}}
