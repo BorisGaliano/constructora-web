@@ -4,10 +4,11 @@
     grid-gap: 2px;
     grid-template-columns:1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
-    align-items: center;
+    align-items: center;   
     .fondo{
         grid-column:1/4;
         grid-row: 1/4;
+        width: 100%;
     }
     .texto-encima{
         grid-column-start:1;
@@ -39,7 +40,7 @@
         border-style:ridge;
         border-width:12px;
         border-color:$color-cotiza;
-        font-family: sans-serif;
+        font-family: 'Montserrat', sans-serif;
         .cotiza2{
             color: $color-tcotiza;
             font-size: 3vw;
@@ -59,7 +60,7 @@
     max-width: $ancho;
 }
 .page-content, .fondo{
-    @include size(100%, 100%)
+    @include size(100%, 100%)    
 } 
 
 
