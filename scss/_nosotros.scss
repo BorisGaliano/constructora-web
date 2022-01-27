@@ -7,9 +7,9 @@
     align-items: center;}
 /* mapa*/
 $textSize:(
-    A1: 1.8vw,
-    B1: 1.7vw,
-    G1: 1.5vw,);
+    A1: 2 vw,
+    B1: 1.9vw,
+    G1: 1.9vw,);
 @each $txt,$size in $textSize {
     .txt#{$txt}{font-size: $size;}}
 .txt1{text-align:center;}
@@ -18,8 +18,6 @@ $textSize:(
 .rectangulo2{
     @extend .rectangulo;        
     left: 15px;
-    .parrafo1 {font-size: 1.5vw;}
-    .parrafo2{font-size: 1.5vw;}      
+    .parrafo1 {font-size: 2.2em;}
+    .parrafo2{font-size: 2.2em;}      
 }
-@media screen and (min-width: $punto-nosotrosmin) and (max-width: $punto-nosotrosmax) {
-.map1{display: none;}}

@@ -10,8 +10,25 @@
     } 
 /* Proyectos */
 .pov1{
-    max-height: 40em;
+    height: 40em;
+    max-width: 100%;
     }
-
-
+header{
+    font-size: 1.5em;
+}
+@media screen and (max-width: 900px) {
+    .map1 {
+      display: none;
+    }
+  }
+@media screen and (max-width: 2000px) {
+.apa1 {
+    font-size: 1.4em;
+}
+}
+@media screen and (max-width: 2000px) {
+    .parrafo2 {
+        display: none;
+    }
+    }
 
