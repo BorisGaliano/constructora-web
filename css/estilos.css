@@ -16,6 +16,9 @@
 header{
     font-size: 1.5em;
 }
+footer{
+    padding: 0px;
+}
 @media screen and (max-width: 900px) {
     .map1 {
       display: none;
@@ -54,3 +57,13 @@ header{
         flex-direction: column;
     }
 }
+@media only screen and (max-width: 2500px) and (min-width: 100px)  {
+    .row {
+        --bs-gutter-x: 0rem;
+    }
+    .container-fluid{
+    padding-right: var(--bs-gutter-x,0rem); 
+    padding-left: var(--bs-gutter-x,0rem);
+    }
+}
+
