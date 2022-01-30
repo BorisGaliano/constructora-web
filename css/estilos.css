@@ -26,9 +26,31 @@ header{
     font-size: 1.4em;
 }
 }
-@media screen and (max-width: 2000px) {
+@media screen and (max-width: 920px) {
     .parrafo2 {
         display: none;
     }
     }
-
+@media screen and (max-width: 500px) {
+    .parrafo1 {
+        display: none;
+    }
+    .rectangulo2{
+        display: none;
+    }
+}
+@media only screen and (max-width: 2500px) and (min-width: 500px)  {
+    .parrafo11 {display: none;
+    }
+    .rectanguloAlfa{
+        display: none;
+    }
+}
+@media screen and (max-width: 990px) {
+    .navbar>.container, .navbar>.container-fluid, .navbar>.container-lg, .navbar>.container-md, .navbar>.container-sm, .navbar>.container-xl, .navbar>.container-xxl {
+        display: flex;
+        flex-wrap: nowrap;
+        align-items:stretch;
+        flex-direction: column;
+    }
+}

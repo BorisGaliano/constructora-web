@@ -61,15 +61,26 @@
   background-color: rgba(0, 0, 0, 0.4);
   align-items: center; }
 
+.rectanguloAlfa {
+  position: relative;
+  padding: 1vw;
+  box-shadow: 0 5px 15px black;
+  background-color: rgba(0, 0, 0, 0.4);
+  align-items: center; }
+
+.parrafo11 {
+  font-size: 1.35em;
+  text-align: center; }
+
 /* mapa*/
 .txtA1 {
-  font-size: 2 vw; }
+  font-size: 1.9 vw; }
 
 .txtB1 {
-  font-size: 1.9vw; }
+  font-size: 1.8vw; }
 
 .txtG1 {
-  font-size: 1.9vw; }
+  font-size: 1.8vw; }
 
 .txt1 {
   text-align: center; }
@@ -81,6 +92,6 @@
 .rectangulo2 {
   left: 15px; }
   .rectangulo2 .parrafo1 {
-    font-size: 2.2em; }
+    font-size: 1.5em; }
   .rectangulo2 .parrafo2 {
-    font-size: 2.2em; }
+    font-size: 1.5em; }
